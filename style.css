@@ -1,3 +1,8 @@
+:root {
+    --bg-light: rgb(252, 229, 229);
+    --text-dark: #311818;
+}
+
 body {
   display: grid;
   grid-template-areas: 

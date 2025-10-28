@@ -13,7 +13,7 @@ body {
   background-color: var(--pink-pale);
   display: grid;
   grid-template-areas:
-    "header header"
+    "header logo"
     "main nav"
     "footer footer";
   grid-template-columns: 5fr 1.5fr;
@@ -24,9 +24,9 @@ body {
   font-family: var(--font-body);
 }
 
-header {
+header, .logo {
   grid-area: header;
-  background-color: var(--pink-strong);
+  background-color: var(--pink-accent);
   color: white;
   display: flex;
   align-items: center;
@@ -36,8 +36,8 @@ header {
   font-size: 2.0rem;
 }
 
-header .logo {
-  height: 60px;
+.logo {
+  grid-area: logo;
 }
 
 nav {
@@ -65,7 +65,7 @@ nav a {
   padding: 10px 16px;
   border-radius: 8px;
   display: inline-block;
-  font-family: var(--font-header);
+  font-family: var(--font-body);
   font-size: 2.0rem;
   transition: all 0.3s ease;
 }
@@ -108,7 +108,7 @@ main h2 {
   text-align: center;
   text-decoration: none;
   color: var(--text-color);
-  width: 180px;
+  width: 300px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -126,10 +126,10 @@ main h2 {
 
 footer {
   grid-area: footer;
-  background-color: var(--pink-strong);
+  background-color: var(--pink-light);
   color: white;
-  text-align: center;
   padding: 15px;
+  text-align: center;
   font-size: 1.9em;
   font-family: var(--font-header);
 }

@@ -16,8 +16,8 @@ body {
     "header logo"
     "main nav"
     "footer footer";
-  grid-template-columns: 5fr 1.5fr;
-  grid-template-rows: 120px 1fr 50px;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: 100px 5fr 100px;
   margin: 0;
   min-height: 100vh;
   color: var(--text-color);
@@ -26,7 +26,7 @@ body {
 
 header, .logo {
   grid-area: header;
-  background-color: var(--pink-accent);
+  background-color: var(--pink-light);
   color: white;
   display: flex;
   align-items: center;
@@ -34,6 +34,7 @@ header, .logo {
   gap: 15px;
   font-family: var(--font-header);
   font-size: 2.0rem;
+  border-bottom: 4px; solid var(--pink-accent);
 }
 
 .logo {
@@ -108,8 +109,17 @@ main h2 {
   text-align: center;
   text-decoration: none;
   color: var(--text-color);
+  color: var(--pink-strong);
   width: 300px;
   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card a,
+.card h3,
+.card h2,
+.card p,
+.card span {
+  color: inherit;
 }
 
 .card img {

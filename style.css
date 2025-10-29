@@ -17,7 +17,7 @@ body {
     "main nav"
     "footer footer";
   grid-template-columns: 6fr 1fr;
-  grid-template-rows: 100px 5fr 100px;
+  grid-template-rows: 100px 5fr auto;
   margin: 0;
   min-height: 100vh;
   color: var(--text-color);
@@ -27,18 +27,25 @@ body {
 header, .logo {
   grid-area: header;
   background-color: var(--pink-light);
-  color: white;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   font-family: var(--font-header);
   font-size: 2.0rem;
-  border-bottom: 4px; solid var(--pink-accent);
+  border-bottom: 4px solid var(--pink-strong);
 }
 
 .logo {
   grid-area: logo;
+  background-color: var(--pink-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-header);
+  font-size: 2.0rem;
+  border-bottom: 4px solid var(--pink-accent);
 }
 
 nav {
@@ -108,18 +115,9 @@ main h2 {
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  color: var(--text-color);
   color: var(--pink-strong);
   width: 300px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.card a,
-.card h3,
-.card h2,
-.card p,
-.card span {
-  color: inherit;
+  transition: 0.3s ease, 0.3s ease;
 }
 
 .card img {
@@ -131,15 +129,13 @@ main h2 {
 .card:hover {
   transform: scale(1.05);
   background-color: var(--pink-accent);
-  color: white;
 }
 
 footer {
   grid-area: footer;
-  background-color: var(--pink-light);
+  background-color: var(--pink-strong);
   color: white;
-  padding: 15px;
   text-align: center;
-  font-size: 1.9em;
-  font-family: var(--font-header);
+  font-size: 1.5em;
+  font-family: var(--font-body);
 }

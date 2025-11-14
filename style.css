@@ -133,7 +133,6 @@ main h2 {
   filter: brightness(1.12) contrast(1.05);
 }
 
-
 footer {
   grid-area: footer;
   background-color: var(--pink-strong);

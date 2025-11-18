@@ -146,6 +146,19 @@ main h2 {
  margin: 5px;
 }
 
+.muziek-image {
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.2));
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.muziek-image img {
+ border: var(--pink-medium) solid 4px;
+ border-radius: 10px;
+ margin: 5px;
+}
+
 footer {
   grid-area: footer;
   background-color: var(--pink-strong);

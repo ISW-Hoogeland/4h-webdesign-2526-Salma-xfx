@@ -136,15 +136,14 @@ main h2 {
 .hobby-image {
   filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.2));
   border-radius: 10px;
-}
-
-.hobby-image:hover {
-  filter: brightness(25);
+  display: flex;
+  justify-content: center;
 }
 
 .hobby-image img {
  border: var(--pink-medium) solid 4px;
  border-radius: 10px;
+ margin: 5px;
 }
 
 footer {
